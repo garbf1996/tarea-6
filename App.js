@@ -15,7 +15,7 @@ export default function App() {
         setErrorMsg("Se denegó el permiso para acceder a la ubicación");
         return;
       }
-
+      //Obtiene la ubicación actual y nombre de la ciudad
       let location = await Location.getCurrentPositionAsync({});
       //Obtiene la ubicación actual y nombre de la ciudad
       let geocode = await Location.reverseGeocodeAsync({
